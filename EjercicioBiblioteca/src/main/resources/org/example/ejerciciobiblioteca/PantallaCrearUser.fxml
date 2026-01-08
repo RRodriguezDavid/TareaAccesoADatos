@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="303.0" prefWidth="233.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ejerciciobiblioteca.PantallaCrearUserController">
+   <children>
+      <TextField fx:id="DNI" layoutX="42.0" layoutY="69.0" promptText="DNI" />
+      <TextField fx:id="Nombre" layoutX="42.0" layoutY="108.0" promptText="Nombre" />
+      <TextField fx:id="Email" layoutX="42.0" layoutY="145.0" promptText="Email" />
+      <TextField fx:id="Password" layoutX="42.0" layoutY="182.0" promptText="Password" />
+      <SplitMenuButton layoutX="63.0" layoutY="222.0" mnemonicParsing="false" text="Tipo de User">
+        <items>
+          <MenuItem mnemonicParsing="false" text="User" />
+          <MenuItem mnemonicParsing="false" text="Administartor" />
+        </items>
+      </SplitMenuButton>
+      <Text layoutX="84.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logear User" />
+      <Button layoutX="85.0" layoutY="264.0" mnemonicParsing="false" onAction="#Registrar" text="Registrar" />
+   </children>
+</Pane>

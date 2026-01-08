@@ -1,0 +1,24 @@
+package org.example.ejerciciobiblioteca;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+public class PrimeraPantallaApplication extends Application {
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+    @Override
+    public void start(Stage stage) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("PrimeraPantallaApplication.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 350, 300);
+        stage.setTitle("Biblioteca");
+        stage.setScene(scene);
+        stage.show();
+    }
+}
